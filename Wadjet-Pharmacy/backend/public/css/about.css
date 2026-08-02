@@ -1,0 +1,125 @@
+/* ============================================================
+   about.css - About Page Styles (Complete)
+   ============================================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #FFFDFB;
+}
+
+.about-hero {
+    width: 90%;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s ease;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.sub-title {
+    color: #24B1B1;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hero-content h1 {
+    color: #007979;
+    font-size: 55px;
+    margin: 20px 0;
+}
+
+.hero-content p {
+    color: #666;
+    line-height: 2;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background: #24B1B1;
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 12px;
+    transition: .4s;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.hero-btn:hover {
+    background: #007979;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 520px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,121,121,.15);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1024px) {
+    .about-hero {
+        gap: 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 0;
+        gap: 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-image img {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-btn {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+
+    .hero-image img {
+        max-width: 280px;
+    }
+}
